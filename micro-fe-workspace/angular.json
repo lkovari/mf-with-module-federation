@@ -53,7 +53,8 @@
 									"maximumError": "8kB"
 								}
 							],
-							"outputHashing": "all",
+							"outputHashing": "none",
+							"baseHref": "/mf-with-module-federation/",
 							"extraWebpackConfig": "projects/shell/webpack.prod.config.js"
 						},
 						"development": {
@@ -196,7 +197,8 @@
 									"maximumError": "8kB"
 								}
 							],
-							"outputHashing": "all",
+							"outputHashing": "none",
+							"baseHref": "/mf-with-module-federation/mf-a/",
 							"extraWebpackConfig": "projects/mf-a/webpack.prod.config.js"
 						},
 						"development": {
@@ -301,7 +303,8 @@
 									"maximumError": "8kB"
 								}
 							],
-							"outputHashing": "all",
+							"outputHashing": "none",
+							"baseHref": "/mf-with-module-federation/mf-b/",
 							"extraWebpackConfig": "projects/mf-b/webpack.prod.config.js"
 						},
 						"development": {

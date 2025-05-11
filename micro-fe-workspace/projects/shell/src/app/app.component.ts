@@ -5,12 +5,12 @@ import { AngularVersionComponent } from '../../../lk-common-lib/src/lib/angular-
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
-  selector: 'app-root',
+  selector: 'app-shell-root',
   imports: [CommonModule, RouterOutlet, RouterLink, NgbModule, AngularVersionComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
   title = 'Micro-Frontend Shell (host)';
-  lastUpdateDate = new Date('05/11/2025 09:37 PM');
+  lastUpdateDate = new Date('05/12/2025 00:11 AM');
 }

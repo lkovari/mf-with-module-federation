@@ -2,8 +2,8 @@ const { shareAll, withModuleFederationPlugin } = require('@angular-architects/mo
 
 module.exports = withModuleFederationPlugin({
   remotes: {
-    "mf-a": "mf-a@https://lkovari.github.io/mf-microfrontend/mf-a/remoteEntry.js",
-    "mf-b": "mf-b@https://lkovari.github.io/mf-microfrontend/mf-b/remoteEntry.js",
+    "mf-a": "mf-a@https://lkovari.github.io/mf-with-module-federation/mf-a/remoteEntry.js",
+    "mf-b": "mf-b@https://lkovari.github.io/mf-with-module-federation/mf-b/remoteEntry.js",
   },
   shared: {
     ...shareAll({ singleton: true, strictVersion: true, requiredVersion: 'auto' }),
