@@ -26,6 +26,17 @@ Install Bootstrap for Styling: npm install @ng-bootstrap/ng-bootstrap
 
 Install module Federation Dependency: npm i @angular-architects/module-federation -D
 
+Take care to choice the proper "stack"
+| Feature | Webpack | esbuild | rspack |
+|---------------------------|----------------------------------|-----------------------------------|------------------------------------|
+| **Performance** | ❌ Slower | ✅ Very fast | ✅ Very fast |
+| **Maturity** | ✅ Most mature | ✅ Stable | ⚠️ Less mature |
+| **Angular 19 Support** | ✅ Fully supported | ✅ Fully supported | ⚠️ Experimental |
+| **Module Federation** | ✅ Native support | ⚠️ Via `@angular-architects/native-federation` | ✅ Native support |
+| **Plugin Ecosystem** | ✅ Extensive | ❌ Minimal | ⚠️ Partial Webpack compatibility |
+| **Config Flexibility** | ✅ Very flexible | ❌ Minimal | ✅ Similar to Webpack |
+| **Best Use Case** | Enterprise & legacy apps | Fast modern apps, CI/CD | Advanced users needing performance |
+
 Configure Microfrontends for Federation:
 
 - mf-b: ng add @angular-architects/module-federation:init --project mf-b --port 4202 -type remote
