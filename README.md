@@ -16,7 +16,7 @@ Create Shared Library: ng generate library lk-common-lib
 
 Add "style": "scss" to angular.json at lk-common-lib
 
-Add a component (AngularVersionComponent) to Shared Library: ng generate component angular-version --project=shared-lib
+Add a component (AngularVersionComponent) to Shared Library: ng generate component angular-version --project=slk-common-lib
 
 Build and Publish Shared Library: (Navigate to the workspace root) ng build lk-common-lib --configuration production
 

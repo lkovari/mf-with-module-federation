@@ -1,0 +1,36 @@
+<div class="container">
+  <header class="title-bar bar-border">
+    <h2 class="text-success" style="text-align: center">
+      The {{ title }} app is running. 🎉
+      <div>
+        <span style="font-size: small; font-weight: 300; color: magenta;">
+          Last update: {{ lastUpdateDate | date:'MM/dd/yyyy HH:mm' }}
+        </span>
+      </div>
+    </h2>
+  </header>
+  <nav class="nav-bar bar-border">
+    <ul>
+      <div class="d-flex justify-content-around">
+        <li class="tooltip-container">
+          <a routerLink="/info" routerLinkActive="active">Info</a>
+          <span class="tooltip-text">Show Shell app Info page</span>
+        </li>
+        <li class="tooltip-container">
+          <a routerLink="/mf-a" routerLinkActive="active">M.Frontend A</a>
+          <span class="tooltip-text">Show MF A remote app</span>
+        </li>
+        <li class="tooltip-container">
+          <a routerLink="/mf-b" routerLinkActive="active">M.Frontend B</a>
+          <span class="tooltip-text">Show MF B remote app</span>
+        </li>
+      </div>
+    </ul>
+  </nav>
+  <main class="body-part">
+    <router-outlet></router-outlet>
+  </main>
+  <footer class="footer bar-border" style="text-align: center">
+    <lib-angular-version></lib-angular-version>
+  </footer>
+</div>
