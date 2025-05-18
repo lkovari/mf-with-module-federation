@@ -56,14 +56,15 @@
 									"maximumError": "8kB"
 								}
 							],
-              "fileReplacements": [
+              				"fileReplacements": [
 								{
 									"replace": "projects/shell/src/environments/environment.ts",
 									"with": "projects/shell/src/environments/environment.prod.ts"
 								}
 							],
 							"outputHashing": "all",
-							"extraWebpackConfig": "projects/shell/webpack.prod.config.js"
+							"extraWebpackConfig": "projects/shell/webpack.prod.config.js",
+							"baseHref": "/mf-with-module-federation/"
 						},
 						"development": {
 							"buildOptimizer": false,
@@ -127,7 +128,7 @@
 		"mf-a": {
 			"projectType": "application",
 			"schematics": {
-        "@schematics/angular:application": {
+        	"@schematics/angular:application": {
 					"strict": true
 				},    
 				"@schematics/angular:component": {
@@ -177,7 +178,7 @@
 									"maximumError": "8kB"
 								}
 							],
-              "fileReplacements": [
+              				"fileReplacements": [
 								{
 									"replace": "projects/mf-a/src/environments/environment.ts",
 									"with": "projects/mf-a/src/environments/environment.prod.ts"
@@ -217,7 +218,7 @@
 				},
 				"extract-i18n": {
 					"builder": "ngx-build-plus:extract-i18n",
-          "options": {
+          			"options": {
 						"browserTarget": "mf-a:build",
 						"extraWebpackConfig": "projects/mf-a/webpack.config.js"
 					}
@@ -248,7 +249,7 @@
 		"mf-b": {
 			"projectType": "application",
 			"schematics": {
-        "@schematics/angular:application": {
+        		"@schematics/angular:application": {
 					"strict": true
 				},  
 				"@schematics/angular:component": {
@@ -298,7 +299,7 @@
 									"maximumError": "8kB"
 								}
 							],
-              "fileReplacements": [
+              				"fileReplacements": [
 								{
 									"replace": "projects/mf-b/src/environments/environment.ts",
 									"with": "projects/mf-b/src/environments/environment.prod.ts"

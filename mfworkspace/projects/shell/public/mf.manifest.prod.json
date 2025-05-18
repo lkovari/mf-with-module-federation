@@ -1,0 +1,4 @@
+{
+	"mf-a": "https://lkovari.github.io/mf-with-module-federation/mf-a/remoteEntry.js",
+	"mf-b": "https://lkovari.github.io/mf-with-module-federation/mf-b/remoteEntry.js"
+}
