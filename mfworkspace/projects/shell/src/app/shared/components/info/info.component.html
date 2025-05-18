@@ -34,19 +34,19 @@
             </ul>
         </li>
         <li>Install Bootstrap for Styling: <code>npm install &#64;ng-bootstrap/ng-bootstrap</code></li>
-        <li>Install Native Federation Dependency: <code>npm i &#64;angular-architects/native-federation -D</code></li>
+        <li>Install Native Federation Dependency: <code>npm i &#64;angular-architects/module-federation -D</code></li>
         <li>Configure Microfrontends for Federation:
             <ul>
                 <li>mf-b:
-                    <code>ng add &#64;angular-architects/native-federation:init --project mf-b --port 4202 -type remote</code>
+                    <code>ng add &#64;angular-architects/module-federation --project mf-b --port 4202 -type remote</code>
                 </li>
                 <li>mf-a:
-                    <code>ng add &#64;angular-architects/native-federation:init --project mf-a --port 4201 -type remote</code>
+                    <code>ng add &#64;angular-architects/module-federation --project mf-a --port 4201 -type remote</code>
                 </li>
             </ul>
         </li>
         <li>Configure Shell as Dynamic Host:
-            <code>ng add &#64;angular-architects/native-federation:init --project shell --port 4200 -type dynamic-host</code>
+            <code>ng add &#64;angular-architects/module-federation --project shell --port 4200 -type dynamic-host</code>
         </li>
         <li>Rename Application Component Selectors (if necessary) to avoid conflicts.</li>
         <li>Add Routes to Shell Application: (Create <code>app.routes.ts</code> in the shell project)</li>
