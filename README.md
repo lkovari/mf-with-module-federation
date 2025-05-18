@@ -72,7 +72,7 @@ npm run remove-dists (dist, dist-gh)
 npm run build-all (npm run build-lib && npm run build-mf-a && npm run build-mf-b && npm run build-shell)
 npm run deploy-gh (npm run prepare-gh-pages && gh-pages -d dist-gh -b gh-pages)
 
-Local Run (do not forget cd workspace)
+Local Run (do not forget cd mfworkspace)
 npm run build-lib-dev
 npm run start-b
 npm run start-a
